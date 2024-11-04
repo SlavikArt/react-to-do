@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const priorities = [
   { level: 'high', color: 'bg-red-500' },
   { level: 'medium', color: 'bg-yellow-500' },
-  { level: 'low', color: 'bg-green-500' }
+  { level: 'low', color: 'bg-green-500' },
 ];
 
 const dueDates = [
@@ -79,13 +79,13 @@ const TaskInput = ({ addTask }) => {
             {d.label}
           </button>
         ))}
-        <button 
-          type="button" 
+        <button
+          type="button"
           onClick={() => {
-            setShowCalendar(!showCalendar); 
+            setShowCalendar(!showCalendar);
             setCustomDateSelected(true);
             setDueDate('');
-          }} 
+          }}
           className={`p-2 rounded text-white ${showCalendar || customDateSelected ? 'bg-blue-500' : 'bg-gray-300'}`}
         >
           Other

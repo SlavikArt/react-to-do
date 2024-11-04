@@ -16,13 +16,10 @@ const TaskList = ({ tasks, toggleCompletion, deleteTask }) => {
               ({task.priority.charAt(0).toUpperCase() + task.priority.slice(1)})
             </span>
             <span className="ml-2 text-sm text-gray-500">
-              {task.dueDate ? `Due: ${task.dueDate}` : ''}
+              {task.dueDate ? `Due: ${new Date(task.dueDate).toLocaleDateString()}` : ''}
             </span>
           </div>
-          <button
-            onClick={() => deleteTask(index)}
-            className="text-red-500 hover:text-red-700"
-          >
+          <button onClick={() => deleteTask(index)} className="text-red-500 hover:text-red-700">
             Delete
           </button>
         </li>
