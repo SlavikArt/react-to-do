@@ -9,9 +9,6 @@
     - [TaskList](./src/components/TaskList.jsx)
     - [Footer](./src/components/Footer.jsx)
   * [App](./src/App.jsx)
-  * [index.css](./src/index.css)
-  * [main.jsx](./src/main.jsx)
 
-
-![](./screenshots/1.png)
-
+### Tasks are stored in the local storage
+![To-Do List ](./screenshots/1.png)
